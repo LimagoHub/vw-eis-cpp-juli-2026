@@ -8,7 +8,8 @@
 int main() {
 
     int feld[] = { 10, 13,94,56,8,1};
-    unsigned int groesse = sizeof(feld)/sizeof(int);
+
+    unsigned int anzahl_der_element = sizeof(feld)/sizeof(int);
 
     return 0;
 }
