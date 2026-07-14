@@ -13,7 +13,11 @@ void ober() {
 }
 */
 
-void tausche(int x, int y);
+void tausche(int &x, int &y) {
+    int temp = x;
+    x = y;
+    y = temp;
+}
 
 // Einsprung in die verarbeitung
 int main(void) {
@@ -24,7 +28,13 @@ int main(void) {
     int a =10;
     int b = 20;
 
+    int foo = 5;
+    int bar = 6;
+
     tausche(a,b);
+    tausche(foo,bar);
+    tausche(a,bar);
+
 
     std::cout << a << " " << b << std::endl;
 
