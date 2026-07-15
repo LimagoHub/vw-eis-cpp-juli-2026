@@ -19,6 +19,9 @@ void tausche(int &x, int &y) {
     y = temp;
 }
 
+// Kein & vor der Variable (wert wird kopiert) ByValue)
+// & vor der Variablen (keine Kopie, sondern das UP verwendet den Originalwert) ByRef
+
 // Einsprung in die verarbeitung
 int main(void) {
 
