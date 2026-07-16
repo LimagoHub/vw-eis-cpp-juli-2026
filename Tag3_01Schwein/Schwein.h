@@ -9,6 +9,10 @@
 class Schwein { // KLasse (alles geschuetzt) oder struct ( alles Oeffentlich)
 
 private:
+    // Eigenschaften
+    // Attribute
+    // Felder
+    // property
     std::string name;
     int gewicht;
 
@@ -22,11 +26,16 @@ private:
 
 public:
 
+    // Konstruktor (Eigenschaften mit Startwerten belegen)
     // Automatischer Aufruf
     Schwein() { // Konstruktor: Aufgabe alle Eigenschaften mit sinnvollen startwerten zu belegen
         name = "Nobody";
         gewicht = 10;
         std::cout << "Ein Schwein wurde erzeugt" << std::endl;
+    }
+
+    ~Schwein() {
+        std::cout << "Quuiiiieeeeeek!" << std::endl;
     }
 
     std::string get_name() const {
