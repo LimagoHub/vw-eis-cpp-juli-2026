@@ -22,6 +22,10 @@ class Schwein { // Bauplan, Definition, (Daten-)Typ
     string name;
     int gewicht{10};
     int andere_variable{gewicht + 1};
+
+    void set_gewicht(int gewicht) {
+        this->gewicht = gewicht;
+    }
 public:
 
     Schwein() { // Konstruktor (hat keinen Rueckgabewert und wird automatisch aufgerufen
@@ -52,9 +56,7 @@ public:
         return gewicht;
     }
 
-    void set_gewicht(int gewicht) {
-        this->gewicht = gewicht;
-    }
+
 
     // Methode
     void fuettern() {
@@ -63,7 +65,9 @@ public:
 };
 
 int main() {
-    Schwein piggy("Miss Piggy", 20);
+
+    string irgendeinname = "Schmitt";
+    Schwein piggy(irgendeinname, 20);
     Schwein babe("Babe");
     Schwein rudi;
 
