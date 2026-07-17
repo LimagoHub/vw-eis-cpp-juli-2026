@@ -26,19 +26,23 @@ private:
         return bTemperatorSensor;
     }
 
+    int getFuellstand() { // Fuellstand
+        return (usiDigSensoren & 0x00FF);
+    }
+
 
 };
 
 int main() {
     int iMaxIndex = 0;
     CTank Tank[10];
-    int i;
-    for (i = 0; i < 10; i++) {
+
+    for (int i = 0; i < 10; i++) {
 
         // Richtigen Code finden
 
         iMaxIndex = i;
     }
-    std::cout << "Tank " << i + 1 << " hat den hoechsten Fuellstand" << std::endl;
+    std::cout << "Tank " << iMaxIndex + 1 << " hat den hoechsten Fuellstand" << std::endl;
     return 0;
 }
